@@ -1,0 +1,112 @@
+.container {
+  font-family: Helvetica, Arial, sans-serif;
+
+  .new-booking-container {
+    .header {
+      padding: 20px;
+    }
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    border: solid 2px dodgerblue;
+    border-radius: 5px;
+
+    .first-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 30px 5px 5px;
+      .locations {
+        width: 206.5px;
+      }
+      .rewards {
+        width: 256.5px;
+      }
+      .locations,
+      .rewards {
+        background: white;
+        margin: 5px;
+      }
+    }
+
+    .second-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 30px 5px 5px;
+      .start-date,
+      .end-date,
+      .guests,
+      .rooms {
+        background: white;
+        margin: 5px;
+      }
+    }
+    .btn-container {
+      display: flex;
+      justify-content: space-around;
+      .submit-button {
+        background: orangered;
+        color: white;
+        padding: 20px 100px;
+        font-size: 16px;
+        border-radius: 10px;
+        justify-content: center;
+        margin: 5px;
+        align-self: center;
+      }
+    }
+  }
+
+  .select-hotel-container {
+    .header {
+      padding: 20px;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 20% 75%;
+      grid-column-gap: 20px;
+      padding: 20px;
+      background: #dcdcdc;
+
+      .filters {
+        background: white;
+        padding: 20px;
+      }
+
+      .hotel-list {
+        background: white;
+        // display: grid;
+        // grid-template-columns: 20% 1fr 20%;
+
+        .hotel {
+          display: flex;
+          justify-content: space-between;
+
+          .photo {
+            width: auto;
+            height: 180px;
+          }
+
+          .details {
+            padding: 10px;
+
+            h1 {
+              font-weight: 400;
+              font-size: 16px;
+            }
+
+            .location {
+              color: #dcdcdc;
+              font-size: 14px;
+            }
+          }
+
+          .price {
+            color: #6dba4a;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
